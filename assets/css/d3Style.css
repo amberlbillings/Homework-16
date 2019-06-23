@@ -1,0 +1,109 @@
+.aText {
+  font-family: sans-serif;
+  font-size: 16px;
+  text-anchor: middle;
+}
+
+.active {
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+  fill: white;
+}
+
+.on {
+  fill: steelblue;
+}
+
+.inactive {
+  transition: fill 0.3s ease-out;
+  text-anchor: middle;
+  fill: black;
+}
+
+.off {
+  fill: silver;
+}
+
+.inactive:hover {
+  fill: #000;
+  cursor: pointer;
+}
+
+/* font size dependent on radius, see app.js */
+.stateText {
+  font-family: sans-serif;
+  fill: #fff;
+  text-anchor: middle;
+}
+
+.stateCircle {
+  fill: #89bdd3;
+  stroke: #e3e3e3;
+}
+
+.chart {
+  display: block;
+  margin: 0;
+}
+
+.chartText {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  text-anchor: middle;
+}
+
+.d3-tip {
+  padding: 10px;
+  font-size: 10px;
+  line-height: 1;
+  line-height: 1.5em;
+  color: #fff;
+  text-align: left;
+  text-transform: capitalize;
+  background: #404040;
+  border-radius: 2px;
+}
+
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: #404040;
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+.d3-tip.n:after {
+  margin: -2px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+.axisText {
+  font-family: sans-serif;
+  text-anchor: middle;
+  font-size: 12px;
+}
+
+/* Mobile Rules */
+@media screen and (max-width: 530px) {
+  .stateText {
+    display: none;
+  }
+
+  .aText {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .aText {
+    font-size: 13px;
+  }
+}
+
+

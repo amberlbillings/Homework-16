@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>D3Times</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/d3Style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700|UnifrakturCook:700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 date-div">
+        <div class="date">
+          <p id="date"></p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img src="assets/images/d3times-logo.png" id="logo" alt="D3 Times" />
+      </div>
+      <div class="col-md-3">
+          <div id="weather">
+            <div id="description"></div>
+            <strong><span id="temp"></span></strong> (<span id="temp-max"></span>/<span id="temp-min"></span>)<br />
+            <div id="location">Minneapolis, MN</div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <hr />
+        <div class="navigation">
+          <span>World</span>
+          <span>U.S.</span>
+          <span>Politics</span>
+          <span>Local</span>
+          <span>Business</span>
+          <span>Sports</span>
+          <span>A&E</span>
+          <span>Opinion</span>
+        </div>
+        <hr class="thick-line" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12  col-md-9">
+        
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        
+      </div>
+      <div class="col-xs-12  col-md-8">
+        <div class="article">
+          <h2>Correlations Discovered Between Health Risks and Age, Income</h2>
+        </div>
+        <div id="scatter">
+              <!-- We append our chart here. -->
+        </div>
+        <div class="article">
+          
+          <h6><strong>By Amber Billings</strong></h6>
+          <p>Lorem ipsum dolor sit amet, causae nominavi phaedrum eu quo. Eu pro quod delectus voluptaria, 
+            minim nobis ea est. Ad antiopam repudiare persecuti pro, ei cum maluisset patrioque. No nisl ponderum mea. 
+            His ea velit libris vocent, quaeque iracundia assueverit est no. Usu nibh perpetua ut, no duo quas indoctum quaerendum.</p>
+
+          <p>Per simul fabulas euripidis cu, vel primis dolorum signiferumque ea, ei mea placerat hendrerit. 
+            Vix ne delenit omittam aliquando. In scripta inermis quaerendum mea, et per indoctum constituto, no 
+            cum esse viris latine. Te movet nobis partem his, nec omnium prompta alienum cu, no mei vocent diceret.</p>
+            
+          <p>Ius ne nemore salutandi erroribus, mei ea nemore suscipit. Unum vitae id pro, tamquam similique voluptatum s
+            ea ne. Graece urbanitas signiferumque mea id. Vel dicunt quaeque delicata et, vel aeterno maluisset no. Diceret 
+            comprehensam ius eu, efficiendi instructior eum at. Choro commune oportere ea vim, qui illum nihil libris ex. 
+            Cum eu ubique utroque mandamus, vis ei agam aliquip.</p>
+            
+          <p>  Et harum tritani integre eam. Eum quando molestiae an, soluta efficiantur nam eu, atqui etiam ius ut. 
+            No ius soluta graece, cum utroque complectitur id. Ei vis alia singulis delicatissimi, et aperiri sapientem 
+            vix, veniam noluisse liberavisse vis ne. Te esse noster his, pro illum maluisset te.</p>
+            
+          <p> No nonumes percipit duo, sapientem abhorreant sadipscing ne quo. Posse omnium epicurei ne duo. Nisl mentitum 
+            eum cu, veri possim lucilius ex pro. Nec at vide dicunt dolorum, scripserit reprehendunt qui id.</p>
+        </div>
+      </div>
+      <div class="col-md-2">
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer-->
+  <div id="footer">
+    <p>The Coding Boot Camp &copy;2019</p>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+  <script type="text/javascript" src="assets/js/app.js"></script>
+
+</body>
+
+</html>
